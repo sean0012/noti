@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X_UA_Compatible" content="id=edge">
+    <title>Bootstrap demo</title>
+  </head>
+  <body>
+    <button onclick="subscribe()">Subscribe</button>
+
+    <script>
+
+    addEventListener('load', async () => {
+      let sw = navigator.serviceWorker.register('./sw.js');
+      console.log(sw);
+    });
+
+    </script>
+  </body>
+</html>
